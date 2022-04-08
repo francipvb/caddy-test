@@ -1,0 +1,10 @@
+{
+	auto_https off
+	admin off
+}
+
+:8000 {
+	root ./dist
+	try_files {path}.html {path} /
+	file_server
+}
